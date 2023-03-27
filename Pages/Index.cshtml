@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div style="margin-top:30px;">
+    <form method="post">
+        <label asp-for="FizzBuzz.Name"></label>
+        <input asp-for="FizzBuzz.Name" style="margin: 8px" /><br />
+        <span asp-validation-for="FizzBuzz.Name" class="text-danger"></span>
+
+        <label asp-for="FizzBuzz.YearOfBirth"></label>
+        <input asp-for="FizzBuzz.YearOfBirth" style="margin: 8px" /><br />
+        <span asp-validation-for="FizzBuzz.YearOfBirth" class="text-danger"></span>
+
+        <button type="submit" class="btn btn-primary" style="margin: 8px">Zatwierdź</button>
+    </form>
+
+    <div class="alert alert-success">
+      
+    </div>
+</div>
+
